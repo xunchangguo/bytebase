@@ -30,7 +30,7 @@ FROM golang:1.21.2 as backend
 ADD go.mod go.sum /
 RUN go mod download
 
-ARG VERSION="development"
+ARG VERSION="2.9.1"
 ARG VERSION_SUFFIX=""
 ARG GO_VERSION="1.21.2"
 ARG GIT_COMMIT="unknown"
