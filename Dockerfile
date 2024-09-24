@@ -26,7 +26,7 @@ RUN pnpm "${RELEASE}-docker"
 
 FROM golang:1.19 as backend
 
-ARG VERSION="development"
+ARG VERSION="1.9.1"
 ARG VERSION_SUFFIX=""
 ARG GO_VERSION="1.19"
 ARG GIT_COMMIT="unknown"
