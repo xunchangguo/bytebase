@@ -16,7 +16,8 @@ WORKDIR /frontend-build
 
 # Install build dependency (e.g. vite)
 COPY ./frontend/package.json ./frontend/pnpm-lock.yaml ./
-RUN pnpm install --frozen-lockfile
+#RUN pnpm install --frozen-lockfile
+RUN pnpm install --no-frozen-lockfile
 
 COPY ./frontend/ .
 # Copy the SQL review config files to the frontend
